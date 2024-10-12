@@ -1,0 +1,16 @@
+{
+  "name": "vite-sb-mono",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@9.12.1",
+  "devDependencies": {
+    "vitest": "^2.1.2"
+  }
+}
