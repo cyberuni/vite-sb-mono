@@ -1,0 +1,13 @@
+diff --git a/dist/chunk-GRK6YIEP.js b/dist/chunk-GRK6YIEP.js
+index cbc09c51b0568e3c55a86817c9e758dce2921d42..1f677bce8d57fbe6c57fba0abd5b9cefca1f6bf6 100644
+--- a/dist/chunk-GRK6YIEP.js
++++ b/dist/chunk-GRK6YIEP.js
+@@ -1,7 +1,7 @@
+ // src/pure.ts
+ import { debug, getElementLocatorSelectors } from "@vitest/browser/utils";
+ import React from "react";
+-import ReactDOMClient from "react-dom/client";
++import ReactDOMClient from "react-dom";
+ var mountedContainers = /* @__PURE__ */ new Set();
+ var mountedRootEntries = [];
+ function render(ui, { container, baseElement, wrapper: WrapperComponent } = {}) {

@@ -20,8 +20,8 @@ export default defineConfig({
     },
     // Make sure to adjust this pattern to match your stories files.
     include: [
-      '**/*.stories.?(m)[jt]s?(x)',
-      '**/*.test.ts?(x)',
+      'src/**/*.stories.?(m)[jt]s?(x)',
+      'src/**/*.test.ts?(x)',
     ],
     setupFiles: ['./.storybook/vitest.setup.ts'],
   },

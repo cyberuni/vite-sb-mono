@@ -20,7 +20,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-    "types": ["vite/global" ]
+    "types": ["vitest/globals"]
   },
   "include": ["src"]
 }

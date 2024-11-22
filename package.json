@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+    "a": "pnpm --filter=./libraries/pkg-a"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +13,13 @@
   "packageManager": "pnpm@9.12.1",
   "devDependencies": {
     "vitest": "^2.1.2"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+			"vitest-browser-react": "patches/vitest-browser-react.patch"
+		},
+    "overrides": {
+      "@storybook/react-dom-shim": "^7"
+    }
   }
 }
