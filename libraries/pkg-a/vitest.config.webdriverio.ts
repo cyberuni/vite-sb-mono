@@ -10,13 +10,13 @@ export default defineConfig({
     storybookTest()
   ],
   test: {
-    name: 'storybook',
+    name: 'pkg-a:wd',
     globals: true,
     browser: {
       enabled: true,
       headless: true,
-      name: 'chromium',
-      provider: 'playwright',
+      name: 'firefox',
+      provider: 'webdriverio',
     },
     // Make sure to adjust this pattern to match your stories files.
     include: [

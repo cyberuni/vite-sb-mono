@@ -1,1 +1,1 @@
-export default ['libraries/*']
+export default ['libraries/*/vitest.config.*']
