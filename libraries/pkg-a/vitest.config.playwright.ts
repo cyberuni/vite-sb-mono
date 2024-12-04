@@ -10,12 +10,12 @@ export default defineProject({
     storybookTest()
   ],
   test: {
-    name: 'pkg-a:wd',
+    name: 'pkg-a',
     browser: {
       enabled: true,
       headless: true,
-      name: 'firefox',
-      provider: 'webdriverio',
+      name: 'chromium',
+      provider: 'playwright',
     },
     // Make sure to adjust this pattern to match your stories files.
     include: [

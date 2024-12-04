@@ -1,17 +1,23 @@
 {
   "name": "@repobuddy/pkg-a",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "tsc -b && vite build",
+    "build-storybook": "storybook build",
+    "coverage": "vitest run --coverage",
+    "dev": "vite",
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "test": "vitest",
+    "test": "vitest run",
     "test:sb": "vitest --projest=storybook"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
   },
   "dependencies": {
     "react": "^17",
@@ -46,10 +52,5 @@
     "vitest": "^2.1.2",
     "vitest-browser-react": "^0.0.1",
     "webdriverio": "^9.4.1"
-  },
-  "eslintConfig": {
-    "extends": [
-      "plugin:storybook/recommended"
-    ]
   }
 }
