@@ -1,25 +1,25 @@
 {
-  "name": "vite-sb-mono",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "vitest",
-    "a": "pnpm --filter=./libraries/pkg-a"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@9.12.1",
-  "devDependencies": {
-    "vitest": "^2.1.2"
-  },
-  "pnpm": {
-    "patchedDependencies": {
+	"name": "vite-sb-mono",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "vitest",
+		"a": "pnpm --filter=./libraries/pkg-a"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"packageManager": "pnpm@11.1.3",
+	"devDependencies": {
+		"vitest": "^2.1.2"
+	},
+	"pnpm": {
+		"patchedDependencies": {
 			"vitest-browser-react": "patches/vitest-browser-react.patch"
 		},
-    "overrides": {
-      "@storybook/react-dom-shim": "^7"
-    }
-  }
+		"overrides": {
+			"@storybook/react-dom-shim": "^7"
+		}
+	}
 }
