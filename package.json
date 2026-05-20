@@ -14,12 +14,10 @@
 	"devDependencies": {
 		"vitest": "^2.1.2"
 	},
-	"pnpm": {
-		"patchedDependencies": {
-			"vitest-browser-react": "patches/vitest-browser-react.patch"
-		},
-		"overrides": {
-			"@storybook/react-dom-shim": "^7"
-		}
+	"overrides": {
+		"@storybook/react-dom-shim": "^7"
+	},
+	"patchedDependencies": {
+		"vitest-browser-react": "patches/vitest-browser-react.patch"
 	}
 }
