@@ -3,5 +3,6 @@ packages:
 allowBuilds:
   edgedriver: true
   esbuild: true
+  fsevents: true
   geckodriver: true
   msw: true
