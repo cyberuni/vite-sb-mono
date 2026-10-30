@@ -56,7 +56,7 @@ importers:
         version: 8.3.5(storybook@8.3.5)
       '@types/react':
         specifier: ^17
-        version: 17.0.83
+        version: 17.0.93
       '@types/react-dom':
         specifier: ^17
         version: 17.0.25
@@ -101,7 +101,7 @@ importers:
         version: 2.1.2(@types/node@22.7.5)(@vitest/browser@2.1.2)(msw@2.4.10(typescript@5.6.3))
       vitest-browser-react:
         specifier: ^0.0.1
-        version: 0.0.1(@types/react-dom@17.0.25)(@types/react@17.0.83)(@vitest/browser@2.1.2)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(vitest@2.1.2)
+        version: 0.0.1(@types/react-dom@17.0.25)(@types/react@17.0.93)(@vitest/browser@2.1.2)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(vitest@2.1.2)
       webdriverio:
         specifier: ^9.4.1
         version: 9.4.1
@@ -1033,8 +1033,8 @@ packages:
   '@types/node@22.7.5':
     resolution: {integrity: sha512-jML7s2NAzMWc//QSJ1a3prpk78cOPchGvXJsC3C6R6PSMoooztvRVQEz89gmBTBY1SPMaqo5teB4uNHPdetShQ==}
 
-  '@types/prop-types@15.7.13':
-    resolution: {integrity: sha512-hCZTSvwbzWGvhqxp/RqVqwU999pBf2vp7hzIjiYOsl8wqOmUxkQ6ddw1cV3l8811+kdUFus/q4d1Y3E3SyEifA==}
+  '@types/prop-types@15.7.15':
+    resolution: {integrity: sha512-F6bEyamV9jKGAFBEmlQnesRPGOQqS2+Uwi0Em15xenOxHaf2hv6L8YCVn3rPdPJOiJfPiCnLIRyvwVaqMY3MIw==}
 
   '@types/qs@6.9.16':
     resolution: {integrity: sha512-7i+zxXdPD0T4cKDuxCUXJ4wHcsJLwENa6Z3dCu8cfCK743OGy5Nu1RmAGqDPsoTDINVEcdXKRvR/zre+P2Ku1A==}
@@ -1045,8 +1045,8 @@ packages:
   '@types/react-dom@17.0.25':
     resolution: {integrity: sha512-urx7A7UxkZQmThYA4So0NelOVjx3V4rNFVJwp0WZlbIK5eM4rNJDiN3R/E9ix0MBh6kAEojk/9YL+Te6D9zHNA==}
 
-  '@types/react@17.0.83':
-    resolution: {integrity: sha512-l0m4ArKJvmFtR4e8UmKrj1pB4tUgOhJITf+mADyF/p69Ts1YAR/E+G9XEM0mHXKVRa1dQNHseyyDNzeuAXfXQw==}
+  '@types/react@17.0.93':
+    resolution: {integrity: sha512-KM4Ty/ZTLZupiYxZVAlP+InNJS3De6uBMdq0ePa6/04+eG9Y7ftnWfst1xTLQ5rwAhgHwQ4momt/O4KepdGBTw==}
 
   '@types/resolve@1.20.6':
     resolution: {integrity: sha512-A4STmOXPhMUtHH+S6ymgE2GiBSMqf4oTvcQZMcHzokuTLVYzXTB8ttjcgxOVaAp2lGwEdzZ0J+cRbbeevQj1UQ==}
@@ -1600,8 +1600,8 @@ packages:
   css.escape@1.5.1:
     resolution: {integrity: sha512-YUifsXXuknHlUsmlgyY0PKzgPOr7/FjCePfHNt0jxm83wHZi44VDMQ7/fGNkjY3/jV1MC+1CmZbaHzugyeRtpg==}
 
-  csstype@3.1.3:
-    resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
+  csstype@3.2.3:
+    resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
 
   data-uri-to-buffer@4.0.1:
     resolution: {integrity: sha512-0R9ikRb668HB7QDxT1vkpuUBtqc53YyAwMwGeUFKRojY/NWKvdZ+9UYtRfGmhqNbRkTSVpMbmyhXipFFv2cb/A==}
@@ -1817,6 +1817,7 @@ packages:
   eslint@9.12.0:
     resolution: {integrity: sha512-UVIOlTEWxwIopRL1wgSQYdnVDcEvs2wyaO6DGo5mXqe3r16IoCNWkR29iHhyaP4cICWjbgbmFUGAhh0GJRuGZw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
     peerDependencies:
       jiti: '*'
@@ -3824,10 +3825,10 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@mdx-js/react@3.0.1(@types/react@17.0.83)(react@17.0.2)':
+  '@mdx-js/react@3.0.1(@types/react@17.0.93)(react@17.0.2)':
     dependencies:
       '@types/mdx': 2.0.13
-      '@types/react': 17.0.83
+      '@types/react': 17.0.93
       react: 17.0.2
 
   '@mswjs/interceptors@0.35.9':
@@ -3964,12 +3965,12 @@ snapshots:
 
   '@storybook/addon-docs@8.3.5(storybook@8.3.5)':
     dependencies:
-      '@mdx-js/react': 3.0.1(@types/react@17.0.83)(react@17.0.2)
+      '@mdx-js/react': 3.0.1(@types/react@17.0.93)(react@17.0.2)
       '@storybook/blocks': 8.3.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(storybook@8.3.5)
       '@storybook/csf-plugin': 8.3.5(storybook@8.3.5)
       '@storybook/global': 5.0.0
       '@storybook/react-dom-shim': 8.3.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(storybook@8.3.5)
-      '@types/react': 17.0.83
+      '@types/react': 17.0.93
       fs-extra: 11.2.0
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
@@ -4349,7 +4350,7 @@ snapshots:
     dependencies:
       undici-types: 6.19.8
 
-  '@types/prop-types@15.7.13': {}
+  '@types/prop-types@15.7.15': {}
 
   '@types/qs@6.9.16': {}
 
@@ -4357,13 +4358,13 @@ snapshots:
 
   '@types/react-dom@17.0.25':
     dependencies:
-      '@types/react': 17.0.83
+      '@types/react': 17.0.93
 
-  '@types/react@17.0.83':
+  '@types/react@17.0.93':
     dependencies:
-      '@types/prop-types': 15.7.13
+      '@types/prop-types': 15.7.15
       '@types/scheduler': 0.16.8
-      csstype: 3.1.3
+      csstype: 3.2.3
 
   '@types/resolve@1.20.6': {}
 
@@ -5023,7 +5024,7 @@ snapshots:
 
   css.escape@1.5.1: {}
 
-  csstype@3.1.3: {}
+  csstype@3.2.3: {}
 
   data-uri-to-buffer@4.0.1: {}
 
@@ -6716,14 +6717,14 @@ snapshots:
       '@types/node': 22.7.5
       fsevents: 2.3.3
 
-  vitest-browser-react@0.0.1(@types/react-dom@17.0.25)(@types/react@17.0.83)(@vitest/browser@2.1.2)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(vitest@2.1.2):
+  vitest-browser-react@0.0.1(@types/react-dom@17.0.25)(@types/react@17.0.93)(@vitest/browser@2.1.2)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(vitest@2.1.2):
     dependencies:
       '@vitest/browser': 2.1.2(@vitest/spy@2.1.2)(playwright@1.48.0)(typescript@5.6.3)(vite@5.4.8(@types/node@22.7.5))(vitest@2.1.2)(webdriverio@9.4.1)
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
       vitest: 2.1.2(@types/node@22.7.5)(@vitest/browser@2.1.2)(msw@2.4.10(typescript@5.6.3))
     optionalDependencies:
-      '@types/react': 17.0.83
+      '@types/react': 17.0.93
       '@types/react-dom': 17.0.25
 
   vitest@2.1.2(@types/node@22.7.5)(@vitest/browser@2.1.2)(msw@2.4.10(typescript@5.6.3)):
