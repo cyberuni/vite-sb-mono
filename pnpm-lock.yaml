@@ -59,7 +59,7 @@ importers:
         version: 17.0.83
       '@types/react-dom':
         specifier: ^17
-        version: 17.0.25
+        version: 17.0.26(@types/react@17.0.83)
       '@vitejs/plugin-react':
         specifier: ^4.3.2
         version: 4.3.2(vite@5.4.8(@types/node@22.7.5))
@@ -101,7 +101,7 @@ importers:
         version: 2.1.2(@types/node@22.7.5)(@vitest/browser@2.1.2)(msw@2.4.10(typescript@5.6.3))
       vitest-browser-react:
         specifier: ^0.0.1
-        version: 0.0.1(@types/react-dom@17.0.25)(@types/react@17.0.83)(@vitest/browser@2.1.2)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(vitest@2.1.2)
+        version: 0.0.1(@types/react-dom@17.0.26(@types/react@17.0.83))(@types/react@17.0.83)(@vitest/browser@2.1.2)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(vitest@2.1.2)
       webdriverio:
         specifier: ^9.4.1
         version: 9.4.1
@@ -1042,8 +1042,10 @@ packages:
   '@types/range-parser@1.2.7':
     resolution: {integrity: sha512-hKormJbkJqzQGhziax5PItDUTMAM9uE2XXQmM37dyd4hVM+5aVl7oVxMVUiVQn2oCQFN/LKCZdvSM0pFRqbSmQ==}
 
-  '@types/react-dom@17.0.25':
-    resolution: {integrity: sha512-urx7A7UxkZQmThYA4So0NelOVjx3V4rNFVJwp0WZlbIK5eM4rNJDiN3R/E9ix0MBh6kAEojk/9YL+Te6D9zHNA==}
+  '@types/react-dom@17.0.26':
+    resolution: {integrity: sha512-Z+2VcYXJwOqQ79HreLU/1fyQ88eXSSFh6I3JdrEHQIfYSI0kCQpTGvOrbE6jFGGYXKsHuwY9tBa/w5Uo6KzrEg==}
+    peerDependencies:
+      '@types/react': ^17.0.0
 
   '@types/react@17.0.83':
     resolution: {integrity: sha512-l0m4ArKJvmFtR4e8UmKrj1pB4tUgOhJITf+mADyF/p69Ts1YAR/E+G9XEM0mHXKVRa1dQNHseyyDNzeuAXfXQw==}
@@ -1817,6 +1819,7 @@ packages:
   eslint@9.12.0:
     resolution: {integrity: sha512-UVIOlTEWxwIopRL1wgSQYdnVDcEvs2wyaO6DGo5mXqe3r16IoCNWkR29iHhyaP4cICWjbgbmFUGAhh0GJRuGZw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
     peerDependencies:
       jiti: '*'
@@ -4355,7 +4358,7 @@ snapshots:
 
   '@types/range-parser@1.2.7': {}
 
-  '@types/react-dom@17.0.25':
+  '@types/react-dom@17.0.26(@types/react@17.0.83)':
     dependencies:
       '@types/react': 17.0.83
 
@@ -6716,7 +6719,7 @@ snapshots:
       '@types/node': 22.7.5
       fsevents: 2.3.3
 
-  vitest-browser-react@0.0.1(@types/react-dom@17.0.25)(@types/react@17.0.83)(@vitest/browser@2.1.2)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(vitest@2.1.2):
+  vitest-browser-react@0.0.1(@types/react-dom@17.0.26(@types/react@17.0.83))(@types/react@17.0.83)(@vitest/browser@2.1.2)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(vitest@2.1.2):
     dependencies:
       '@vitest/browser': 2.1.2(@vitest/spy@2.1.2)(playwright@1.48.0)(typescript@5.6.3)(vite@5.4.8(@types/node@22.7.5))(vitest@2.1.2)(webdriverio@9.4.1)
       react: 17.0.2
@@ -6724,7 +6727,7 @@ snapshots:
       vitest: 2.1.2(@types/node@22.7.5)(@vitest/browser@2.1.2)(msw@2.4.10(typescript@5.6.3))
     optionalDependencies:
       '@types/react': 17.0.83
-      '@types/react-dom': 17.0.25
+      '@types/react-dom': 17.0.26(@types/react@17.0.83)
 
   vitest@2.1.2(@types/node@22.7.5)(@vitest/browser@2.1.2)(msw@2.4.10(typescript@5.6.3)):
     dependencies:
