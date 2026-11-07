@@ -41,7 +41,7 @@ importers:
         version: 8.3.5(react@17.0.2)(storybook@8.3.5)
       '@storybook/blocks':
         specifier: ^8.3.5
-        version: 8.3.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(storybook@8.3.5)
+        version: 8.6.14(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(storybook@8.3.5)
       '@storybook/experimental-addon-test':
         specifier: ^8.3.5
         version: 8.3.5(@vitest/browser@2.1.2)(storybook@8.3.5)(vitest@2.1.2)
@@ -830,6 +830,18 @@ packages:
       react-dom:
         optional: true
 
+  '@storybook/blocks@8.6.14':
+    resolution: {integrity: sha512-rBMHAfA39AGHgkrDze4RmsnQTMw1ND5fGWobr9pDcJdnDKWQWNRD7Nrlxj0gFlN3n4D9lEZhWGdFrCbku7FVAQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+      storybook: ^8.6.14
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-dom:
+        optional: true
+
   '@storybook/builder-vite@8.3.5':
     resolution: {integrity: sha512-paGX8tEmAeAKFU5Cnwkq3RAi3LFCnmjAxMJikT09jUi6jDpNa0VzH8jbLxKdjsPMAsz0Wv3mrLvL2b8hyxLWAw==}
     peerDependencies:
@@ -875,12 +887,12 @@ packages:
   '@storybook/global@5.0.0':
     resolution: {integrity: sha512-FcOqPAXACP0I3oJ/ws6/rrPT9WGhu915Cg8D02a9YxLo0DE9zI+a9A5gRGvmQ09fiWPukqI8ZAEoQEdWUKMQdQ==}
 
-  '@storybook/icons@1.2.12':
-    resolution: {integrity: sha512-UxgyK5W3/UV4VrI3dl6ajGfHM4aOqMAkFLWe2KibeQudLf6NJpDrDMSHwZj+3iKC4jFU7dkKbbtH2h/al4sW3Q==}
+  '@storybook/icons@1.6.0':
+    resolution: {integrity: sha512-hcFZIjW8yQz8O8//2WTIXylm5Xsgc+lW9ISLgUk1xGmptIJQRdlhVIXCpSyLrQaaRiyhQRaVg7l3BD9S216BHw==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
 
   '@storybook/instrumenter@8.3.5':
     resolution: {integrity: sha512-NLDXai5y2t1ITgHVK9chyL0rMFZbICCOGcnTbyWhkLbiEWZKPJ8FuB8+g+Ba6zwtCve1A1Cnb4O2LOWy7TgWQw==}
@@ -1817,6 +1829,7 @@ packages:
   eslint@9.12.0:
     resolution: {integrity: sha512-UVIOlTEWxwIopRL1wgSQYdnVDcEvs2wyaO6DGo5mXqe3r16IoCNWkR29iHhyaP4cICWjbgbmFUGAhh0GJRuGZw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
     peerDependencies:
       jiti: '*'
@@ -3077,6 +3090,10 @@ packages:
     resolution: {integrity: sha512-q5W7tVM71e2xjHZTlgfTDoPF/SmqKG5hddq9SzR49CH2hayqRKJtQ4mtRlSxKaJlR/+9rEM+mnBHf7I2/BQcpQ==}
     engines: {node: '>=6.10'}
 
+  ts-dedent@2.3.0:
+    resolution: {integrity: sha512-JfJeIHke7y2egdGGgRAvpCwYFUsHlM2gPcrVOxFkznt/4uzQ7HFmvE63iFHVLBJNDuyDOQgijDK/tXH/f6Msjg==}
+    engines: {node: '>=6.10'}
+
   tsconfig-paths@4.2.0:
     resolution: {integrity: sha512-NoZ4roiN7LnbKn9QqE1amc9DJfzvZXxF4xDavcOWt1BPkdx+m+0gJuPM+S0vCe7zTJMYUP0R8pO2XMr+Y8oLIg==}
     engines: {node: '>=6'}
@@ -4051,7 +4068,7 @@ snapshots:
     dependencies:
       '@storybook/csf': 0.1.11
       '@storybook/global': 5.0.0
-      '@storybook/icons': 1.2.12(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+      '@storybook/icons': 1.6.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       '@types/lodash': 4.17.10
       color-convert: 2.0.1
       dequal: 2.0.3
@@ -4068,6 +4085,15 @@ snapshots:
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
 
+  '@storybook/blocks@8.6.14(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(storybook@8.3.5)':
+    dependencies:
+      '@storybook/icons': 1.6.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+      storybook: 8.3.5
+      ts-dedent: 2.3.0
+    optionalDependencies:
+      react: 17.0.2
+      react-dom: 17.0.2(react@17.0.2)
+
   '@storybook/builder-vite@8.3.5(storybook@8.3.5)(typescript@5.6.3)(vite@5.4.8(@types/node@22.7.5))':
     dependencies:
       '@storybook/csf-plugin': 8.3.5(storybook@8.3.5)
@@ -4079,7 +4105,7 @@ snapshots:
       fs-extra: 11.2.0
       magic-string: 0.30.12
       storybook: 8.3.5
-      ts-dedent: 2.2.0
+      ts-dedent: 2.3.0
       vite: 5.4.8(@types/node@22.7.5)
     optionalDependencies:
       typescript: 5.6.3
@@ -4135,7 +4161,7 @@ snapshots:
 
   '@storybook/global@5.0.0': {}
 
-  '@storybook/icons@1.2.12(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
+  '@storybook/icons@1.6.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
     dependencies:
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
@@ -6572,6 +6598,8 @@ snapshots:
       typescript: 5.6.3
 
   ts-dedent@2.2.0: {}
+
+  ts-dedent@2.3.0: {}
 
   tsconfig-paths@4.2.0:
     dependencies:
